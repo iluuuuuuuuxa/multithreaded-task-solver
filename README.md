@@ -19,8 +19,8 @@ This project implements a highly concurrent execution engine in C++, designed to
 
 The project includes a `Makefile` for straightforward compilation. 
 
-1. Build the project using `make`: make
-2. Execute the compiled binary: ./test
+1. Build the project using *make*: `make`
+2. Execute the compiled binary: `./test`
 
 ## Disclaimer
 *This project was developed as part of the Operating Systems course at the Faculty of Information Technology, CTU in Prague. The code demonstrates advanced multithreading concepts and synchronization primitives.*
