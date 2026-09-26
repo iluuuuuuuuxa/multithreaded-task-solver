@@ -11,9 +11,16 @@ This project implements a highly concurrent execution engine in C++, designed to
 *   **Reentrant Callbacks:** Features thread-safe, reentrant callback methods for returning processed data to the requesters without bottlenecking the system.
 
 ## Technical Stack
-*   **Language:** C++ (C++11 / C++20)
-*   **Concurrency:** ``, ``, ``, POSIX API
-*   **Concepts:** Concurrency, Shared Memory Management, Deadlock Prevention, Load Balancing.
+* **Language:** C++
+* **Concurrency:** `std::thread`, `std::mutex`, `std::condition_variable`, POSIX API
+* **Concepts:** Concurrency, Shared Memory Management, Deadlock Prevention, Load Balancing
+
+## How to Build and Run
+
+The project includes a `Makefile` for straightforward compilation. 
+
+1. Build the project using `make`: make
+2. Execute the compiled binary: ./test
 
 ## Disclaimer
 *This project was developed as part of the Operating Systems course at the Faculty of Information Technology, CTU in Prague. The code demonstrates advanced multithreading concepts and synchronization primitives.*
