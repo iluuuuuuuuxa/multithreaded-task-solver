@@ -6,7 +6,7 @@ This project implements a highly concurrent execution engine in C++, designed to
 ## Architecture & Core Features
 *   **Multithreaded Dispatching:** Utilizes C++ standard threads (or POSIX threads) to manage a central worker pool, handling incoming requests concurrently.
 *   **Producer-Consumer Pattern:** Implements a robust producer-consumer architecture. Customer support threads listen for incoming calculation requests and feed them into a shared task queue, while worker threads consume and process these tasks.
-*   **Thread Synchronization:** Engineered strict synchronization mechanisms using `std::mutex`, semaphores, and condition variables to prevent race conditions, data corruption, and deadlocks during shared memory access.
+*   **Thread Synchronization:** Engineered strict synchronization mechanisms using `std::mutex` and `std::condition_variable` to prevent race conditions, data corruption, and deadlocks during shared memory access.
 *   **Asynchronous Data Delivery:** Supports both synchronous and asynchronous data fetching from external providers (simulated as data producers), requiring complex state tracking to ensure tasks are only executed when all dependencies are met.
 *   **Reentrant Callbacks:** Features thread-safe, reentrant callback methods for returning processed data to the requesters without bottlenecking the system.
 
