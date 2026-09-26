@@ -24,3 +24,6 @@ The project includes a `Makefile` for straightforward compilation.
 
 ## Disclaimer
 *This project was developed as part of the Operating Systems course at the Faculty of Information Technology, CTU in Prague. The code demonstrates advanced multithreading concepts and synchronization primitives.*
+
+## Note on Compilation
+This project relies on a proprietary static testing library (*libprogtest_solver.a*) provided by the CTU evaluation platform, which is deliberately excluded from this repository to comply with Git best practices and university copyright. The source code (*solution.cpp*) is provided here primarily for demonstration, architectural evaluation, and code review.
